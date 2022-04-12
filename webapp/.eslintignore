@@ -1,0 +1,6 @@
+*.d.ts
+build
+node_modules
+public
+reportWebVitals.ts
+setupTests.ts
