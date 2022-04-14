@@ -1,8 +1,6 @@
 package controller;
 
-import dict.entity.Employee;
-import dict.repository.EmployeeRepository;
-import org.junit.Test;
+import dict.repository.MerriamWebsterRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 
@@ -14,7 +12,7 @@ public class EmployeeRepositoryIntegrationTest {
     private TestEntityManager entityManager;
 
     @Autowired
-    private EmployeeRepository employeeRepository;
+    private MerriamWebsterRepository merriamWebsterRepository;
 
 //    @Test
 //    public void whenFindByName_thenReturnEmployee() {

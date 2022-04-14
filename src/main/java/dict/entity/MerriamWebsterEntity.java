@@ -8,15 +8,14 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name = "person")
-public class Employee {
+@Table(name = "merriam_webster")
+public class MerriamWebsterEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-//    @Size(min = 3, max = 20)
-    private String name;
+    private String target;
 
-    // standard getters and setters, constructors
+    private String description;
 }

@@ -1,26 +1,14 @@
 package controller;
 
-import dict.entity.Employee;
-import dict.repository.EmployeeRepository;
+import dict.repository.MerriamWebsterRepository;
 import dict.service.EmployeeService;
-import dict.service.EmployeeServiceImpl;
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.context.annotation.Bean;
-import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.Arrays;
-import java.util.List;
-
-import static org.mockito.BDDMockito.given;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
 @RunWith(SpringRunner.class)
-public class EmployeeServiceImplIntegrationTest {
+public class MerriamWebsterEntityServiceImplIntegrationTest {
 
 //    @TestConfiguration
 //    static class EmployeeServiceImplTestContextConfiguration {
@@ -35,7 +23,7 @@ public class EmployeeServiceImplIntegrationTest {
     private EmployeeService employeeService;
 
     @MockBean
-    private EmployeeRepository employeeRepository;
+    private MerriamWebsterRepository merriamWebsterRepository;
 
 //    @Test
 //    public void givenEmployees_whenGetEmployees_thenReturnJsonArray()

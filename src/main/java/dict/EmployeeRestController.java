@@ -1,6 +1,6 @@
 package dict;
 
-import dict.entity.Employee;
+import dict.entity.MerriamWebsterEntity;
 import dict.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +17,7 @@ public class EmployeeRestController {
     private EmployeeService employeeService;
 
     @GetMapping("/employees")
-    public List<Employee> getAllEmployees() {
+    public List<MerriamWebsterEntity> getAllEmployees() {
         return employeeService.getAllEmployees();
     }
 }

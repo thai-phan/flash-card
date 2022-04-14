@@ -48,6 +48,7 @@
     "quotes": ["error", "backtick", { "avoidEscape": true }],
     "jsx-quotes": ["error", "prefer-double"],
     "no-unused-vars": "warn",
-    "max-len": ["error", { "code": 120 }]
+    "max-len": ["error", { "code": 120 }],
+    "react/no-unescaped-entities": 0
   }
 }

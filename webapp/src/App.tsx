@@ -1,23 +1,29 @@
 import React from 'react'
+import {
+  Routes,
+  Route,
+  Link,
+} from "react-router-dom"
+
 import './App.css'
-import CollapsedMenu from "./component/CollapsedMenu"
+import CollapsedMenu from "./route/main/CollapsedMenu"
+import Main from './route/main/Main'
 
 const App = () => {
   return (
     <div className="App">
-      <CollapsedMenu/>
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-              adsfadasdf asdf
-          </div>
-          <div className="flip-card-back">
-            <h1>John Doe</h1>
-            <p>Architect & Engineer</p>
-            <p>We love that guy</p>
-          </div>
-        </div>
-      </div>
+      <Routes>
+        <Route path="/*" element={<Main/>} />
+        <Route path="/main/*" element={<Main/>} />
+        <Route
+          path="*"
+          element={
+            <main style={{padding: `1rem`}}>
+              <p>There's nothing here!</p>
+            </main>
+          }
+        />
+      </Routes>
     </div>
   )
 }
