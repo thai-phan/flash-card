@@ -8,11 +8,11 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name = "merriam_webster")
-public class MerriamWebsterEntity {
+@Table(name = "dictionary")
+public class DictionaryEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String target;

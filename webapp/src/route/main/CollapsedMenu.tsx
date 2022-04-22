@@ -45,7 +45,7 @@ const CollapsedMenu = () => {
                 <Link
                   to={`/register`}
                 >
-                  Register
+                  Register Word
                 </Link>
               </Menu.Item>
               <Menu.Item key="3" icon={<ContainerOutlined />}>

@@ -1,7 +1,8 @@
 import React from 'react'
 import './index.css'
-import 'antd/dist/antd.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'antd/dist/antd.min.css'
+
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import {BrowserRouter} from 'react-router-dom'

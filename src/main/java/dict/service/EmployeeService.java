@@ -1,11 +1,11 @@
 package dict.service;
 
-import dict.entity.MerriamWebsterEntity;
+import dict.entity.DictionaryEntity;
 
 import java.util.List;
 
 public interface EmployeeService {
-    List<MerriamWebsterEntity> getAllEmployees();
+    List<DictionaryEntity> getAllEmployees();
     List<String> getString();
-    MerriamWebsterEntity getEmployeeByName(String name);
+    DictionaryEntity getEmployeeByName(String name);
 }

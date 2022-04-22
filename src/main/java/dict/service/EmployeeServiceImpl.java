@@ -1,7 +1,7 @@
 package dict.service;
 
-import dict.entity.MerriamWebsterEntity;
-import dict.repository.MerriamWebsterRepository;
+import dict.entity.DictionaryEntity;
+import dict.repository.DictionaryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,10 +10,10 @@ import java.util.List;
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
     @Autowired
-    private MerriamWebsterRepository employeeRepository;
+    private DictionaryRepository employeeRepository;
 
     @Override
-    public List<MerriamWebsterEntity> getAllEmployees() {
+    public List<DictionaryEntity> getAllEmployees() {
         return null;
     }
 
@@ -23,7 +23,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public MerriamWebsterEntity getEmployeeByName(String name) {
+    public DictionaryEntity getEmployeeByName(String name) {
         return null;
     }
 }

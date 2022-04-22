@@ -1,6 +1,6 @@
 package controller;
 
-import dict.repository.MerriamWebsterRepository;
+import dict.repository.DictionaryRepository;
 import dict.service.EmployeeService;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +8,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-public class MerriamWebsterEntityServiceImplIntegrationTest {
+public class DictionaryEntityServiceImplIntegrationTest {
 
 //    @TestConfiguration
 //    static class EmployeeServiceImplTestContextConfiguration {
@@ -23,7 +23,7 @@ public class MerriamWebsterEntityServiceImplIntegrationTest {
     private EmployeeService employeeService;
 
     @MockBean
-    private MerriamWebsterRepository merriamWebsterRepository;
+    private DictionaryRepository dictionaryRepository;
 
 //    @Test
 //    public void givenEmployees_whenGetEmployees_thenReturnJsonArray()
